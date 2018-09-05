@@ -1,0 +1,91 @@
+//@import:
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+//头部
+header {
+    width: 100%;
+    height: 100px;
+    background: url(../images/1.jpg) no-repeat top center;
+    background-size: 100%;
+    text-align: center;
+    select,
+    input {
+        border: none;
+        height: 26px;
+        margin-top: 20px;
+    }
+    input {
+        padding-left: 10px;
+        margin-left: -10px;
+    }
+}
+
+//底部
+footer {
+    width: 100%;
+    display: flex;
+    p {
+        flex: 1;
+        img {
+            display: block
+        }
+    }
+}
+
+//主体内容
+main {
+    flex: 1;
+    width: 100%;
+    .menu {
+        overflow: hidden;
+        p {
+            float: left;
+            width: 20%;
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .view {
+        display: flex;
+        p {
+            vertical-align: middle;
+        }
+    }
+    .list {
+        overflow: hidden;
+        dl {
+            float: left;
+            width: 48%;
+            overflow: hidden;
+            background: #eee;
+            margin: 1%;
+            dt,
+            dd {
+                float: left;
+            }
+            dd {
+                width: 80%;
+            }
+            dt {
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
